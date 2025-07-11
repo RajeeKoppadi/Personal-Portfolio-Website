@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koppadi Rajeevi - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    header {
+      background: rgba(114, 131, 143, 0.9);
+      color: #212121;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+    }
+    nav a {
+      color: #212121;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+      border: 1px solid #e0e0e0;
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #212121;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+    }
+    .card h3 {
+      color: #3f51b5;
+    }
+    .highlight {
+      color: #5c6bc0;
+      font-weight: 600;
+    }
+    .project-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.9rem 1.8rem;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      font-size: 1rem;
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 26px rgba(102, 126, 234, 0.4);
+    }
+    .internship-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    .internship-card {
+      background: rgba(255, 255, 255, 0.85);
+      color: #212121;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+      border: 1px solid #e0e0e0;
+      backdrop-filter: blur(6px);
+      margin-bottom: 2rem;
+    }
+    footer {
+      background: rgba(114, 131, 143, 0.9);
+      color: #555;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
+      backdrop-filter: blur(8px);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay"></div>
+
+  <header>
+    <h1>Koppadi Rajeevi</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>👤 About Me</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      I'm Koppadi Rajeevi, a passionate B.Tech student in CSE (Data Science) who enjoys turning complex problems into data-driven solutions. I'm skilled in Python, Power BI, Tableau, and enjoy building useful tools and interactive dashboards.
+    </p>
+    <div style="text-align: center;">
+<a class="button" href="assets/kRajeevi_resume.pdf" download target="_blank">📄 Download Resume</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>🎓 My Education Journey</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="project-icon">📘</div>
+        <h3>2022 – Present</h3>
+        <p class="highlight">NSR Institute of Technology</p>
+        <p>B.Tech in CSE (Data Science)<br><strong>CGPA:</strong> 8.84/10</p>
+      </div>
+      <div class="card">
+        <div class="project-icon">📗</div>
+        <h3>2020 – 2022</h3>
+        <p class="highlight">Aditya Junior College</p>
+        <p>Intermediate – MPC<br><strong>Marks:</strong> 916/1000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ Skills</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Programming</h3>
+        <p>Python, C, Java, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Power BI, Tableau, Visual Studio, MySQL</p>
+      </div>
+      <div class="card">
+        <h3>Concepts</h3>
+        <p>Data Science, Machine Learning, Data Visualization</p>
+      </div>
+    </div>
+  </section>
+  <section class="internship-section">
+    <h2>🌐 Internship</h2>
+
+    <div class="internship-card">
+      <h3>Data Analyst Intern</h3>
+      <p><strong>Company:</strong> <a href="https://apssdc.in" target="_blank">APSSDC Pvt Ltd (Virtual)</a></p>
+      <p><strong>Duration:</strong> Apr 2025 – June 2025</p>
+      <p><strong>Description:</strong> Worked on IPL Data Analysis using Python libraries. Focused on uncovering insights from historical IPL data, understanding team and player performance using data visualization and machine learning techniques.</p>
+      <a class="button" href="assets/certificates/apssdc_certificate.pdf" target="_blank">📄 View Certificate</a>
+    </div>
+
+    <div class="internship-card">
+      <h3>AIML Intern</h3>
+      <p><strong>Company:</strong> <a href="https://demysoft.com" target="_blank">Demy Software Solutions, Visakhapatnam</a></p>
+      <p><strong>Duration:</strong> June 2024 – July 2024</p>
+      <p><strong>Description:</strong> Gained hands-on experience in data preprocessing, model training and evaluation. Developed understanding of AIML technologies and implemented solutions using key ML algorithms.</p>
+      <a class="button" href="assets/demy_aiml_certificate.pdf" target="_blank">📄 View Certificate</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>💼 Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>IPL Data Analysis</h3>
+        <p>Exploratory analysis on IPL data using Python libraries to find trends, generate insights, and build visual dashboards.</p>
+      </div>
+      <div class="card">
+        <h3>Online Restaurant Menu</h3>
+        <p>A responsive web app with live search, smart cart, QR UPI simulation and bill download using HTML, CSS, and JS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <div class="card" style="max-width: 600px; margin: auto; text-align: center;">
+      <p>Email: <a href="mailto:rajeekoppadi@gmail.com">rajeekoppadi@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/RajeeKoppadi" target="_blank">RajeeKoppadi</a></p>
+      <p>Phone: +91 8885146555</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Koppadi Rajeevi. Made with 💙 using HTML & CSS</p>
+  </footer>
+</body>
+</html>
